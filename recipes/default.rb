@@ -16,3 +16,7 @@ end
 package "php56u-pecl-gearman" do
 	version "1.1.2-1"
 end
+
+package "libmemcached" do
+	version "1.0.16-1.el6.art"
+end
