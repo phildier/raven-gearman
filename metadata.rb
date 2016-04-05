@@ -28,6 +28,6 @@ attribute "raven_gearman/master",
 	:display_name => "Install gearmand",
 	:description => "Install gearmand",
 	:required => "recommended",
-	:type => "boolean",
+	:type => "string",
 	:recipes => ["raven_gearman::master"],
 	:default => "false"
