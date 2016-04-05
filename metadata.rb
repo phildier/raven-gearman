@@ -21,7 +21,7 @@ attribute "raven_gearman/memcached_servers",
 	:description => "Memcached server for gearman",
 	:required => "recommended",
 	:type => "string",
-	:recipes => ["raven_gearman::master"],
+	:recipes => ["raven-gearman::master"],
 	:default => "127.0.0.1"
 
 attribute "raven_gearman/master",
@@ -29,5 +29,5 @@ attribute "raven_gearman/master",
 	:description => "Install gearmand",
 	:required => "recommended",
 	:type => "string",
-	:recipes => ["raven_gearman::master"],
+	:recipes => ["raven-gearman::master"],
 	:default => "false"
