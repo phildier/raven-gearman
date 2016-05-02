@@ -10,6 +10,7 @@ recipe "raven-gearman::default", "install gearman and dependencies"
 recipe "raven-gearman::master", "run gearmand server"
 recipe "raven-gearman::dev", "install gearman build script"
 recipe "raven-gearman::graceful_shutdown", "gracefully shut down server"
+recipe "raven-gearman::graceful_shutdown_slow", "gracefully shut down server slow"
 recipe "raven-gearman::spot_instance", "Checks for Spot termination notice and shuts down"
 
 attribute "raven_gearman",
