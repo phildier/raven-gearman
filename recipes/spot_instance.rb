@@ -1,5 +1,6 @@
-cookbook_file "/root/gearman_spot.sh" do
-	source "gearman_spot.sh"
+template "/root/gearman_spot.sh" do
+	source "gearman_spot.sh.erb"
+	variables ({ :url => node[:raven_gearman][:slackwebhookurl] })
 	owner "root"
 	group "root"
 	mode  "0700"
