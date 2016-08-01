@@ -1,6 +1,10 @@
 template "/root/gearman_spot.sh" do
 	source "gearman_spot.sh.erb"
-	variables ({ :url => node[:raven_gearman][:slackwebhookurl] })
+	variables ({ 
+		:url => node[:raven_gearman][:slack][:webhookurl],
+		:channel => node[:raven_gearman][:slack][:channel],
+		:bot => node[:raven_gearman][:slack][:botname]
+	})
 	owner "root"
 	group "root"
 	mode  "0700"
