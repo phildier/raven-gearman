@@ -36,20 +36,20 @@ attribute "raven_gearman/master",
 attribute "raven_gearman/slack/webhookurl",
 	:display_name => "Slack webhook URL",
 	:description => "Slack webhook URL",
-	:required => "Required",
+	:required => "required",
 	:type => "string",
 	:recipes => ["raven-gearman::spot_instance"]
 
 attribute "raven_gearman/slack/channel",
 	:display_name => "Slack channel",
 	:description => "Slack channel",
-	:required => "Required",
+	:required => "required",
 	:type => "string",
 	:recipes => ["raven-gearman::spot_instance"]
 
 attribute "raven_gearman/slack/botname",
 	:display_name => "Slack botname",
 	:description => "Slack botname",
-	:required => "Required",
+	:required => "required",
 	:type => "string",
 	:recipes => ["raven-gearman::spot_instance"]
