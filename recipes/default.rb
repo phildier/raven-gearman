@@ -13,9 +13,7 @@ package "gearman" do
 	version "1.1.12-2"
 end
 
-package "php56u-pecl-gearman" do
-	version "1.1.2-1"
-end
+package "php56u-pecl-gearman"
 
 package "libmemcached" do
 	version "1.0.16-1.el6.art"
